@@ -778,44 +778,111 @@ select.form-control:not([size]):not([multiple]){
 	color: #63c7bd;
 }
 
+.contact-ul li i{
+	margin-right: 0.50rem !important;
+}
+ul.contact-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+ul.contact-ul li{
+	width: 150px;
+    text-align: initial;
+}
 
 
 
+.animate-box {
+    opacity: 0;
+}
+.couple-wrap {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated-fast {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
+.couple-half {
+    width: 50%;
+    float: left;
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.couple-half .groom {
+    float: right !important;
+    margin-right: 5px;
+}
+.couple-half .bride {
+    float: left;
+    margin-left: 5px;
+}
+.couple-half .groom, .couple-half .bride {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.couple-half .groom img, .couple-half .bride img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.img-responsive {
+    display: block;
+    /* max-width: 100%; */
+    height: auto;
+}
 
+.couple-half .desc-groom {
+    padding-right: 180px;
+    text-align: right;
+}
 
+.couple-half h3 {
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.heart {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    animation: pulse 1s ease infinite;
+}
+.heart i {
+    font-size: 20px;
+    background: #fff;
+    padding: 20px;
+    color: #F14E95;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.couple-half .bride {
+    float: left;
+    margin-left: 5px;
+}
+.couple-half .desc-bride {
+    padding-left: 180px;
+    text-align: left;
+}
